@@ -18,13 +18,13 @@ import math as mt
 import networkx as nx
 import copy
 
-from mcmc import posi_assign
-from mcmc import edge_oper
-from mcmc import theta
-from mcmc import graph
+from mcmc.posi_assign import posi_assign
+from mcmc.edge_oper import edge_oper
+from mcmc.theta import theta
+from mcmc.graph import connec_graph
 from mcmc import mcmc
 from mcmc import cli
-from mcmc import Metripolis_Hastings 
+from mcmc.Metripolis_Hastings import Metripolis_Hastings 
 
 
 class TestMcmc(unittest.TestCase):

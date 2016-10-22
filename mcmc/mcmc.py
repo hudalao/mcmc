@@ -73,7 +73,7 @@ for ii in range(1, Time_points):
     edge_oper(N, posi, G[ii]).edges_weighted(weight)
 
 #ploting the first num graphs
-num = 15
+num = 1
 for ii in range(num):
     plot_graph(G, N, ii, posi)
 plt.axis('on')
