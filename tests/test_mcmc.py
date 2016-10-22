@@ -25,7 +25,7 @@ from mcmc.graph import connec_graph
 from mcmc import mcmc
 from mcmc import cli
 from mcmc.Metripolis_Hastings import Metripolis_Hastings 
-
+from mcmc.plot_graph import plot_graph
 
 class TestMcmc(unittest.TestCase):
     

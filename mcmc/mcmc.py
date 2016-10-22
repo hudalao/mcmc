@@ -22,14 +22,15 @@ Ly = 1
 import numpy as np
 import math as mt
 import networkx as nx
-from posi_assign import posi_assign
-from edge_oper import edge_oper
-from theta import theta
-from graph import connec_graph
-from Metripolis_Hastings import Metripolis_Hastings
-from plot_graph import plot_graph
 import copy
 import matplotlib.pyplot as plt
+from mcmc.posi_assign import posi_assign
+from mcmc.edge_oper import edge_oper
+from mcmc.theta import theta
+from mcmc.graph import connec_graph
+from mcmc.Metripolis_Hastings import Metripolis_Hastings
+from mcmc.plot_graph import plot_graph
+
 
 
 #create a list storing every graphs at every time points

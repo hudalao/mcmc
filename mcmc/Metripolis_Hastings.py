@@ -1,9 +1,10 @@
-from theta import theta
-from edge_oper import edge_oper
-from graph import connec_graph
+from mcmc.theta import theta
+from mcmc.edge_oper import edge_oper
+from mcmc.graph import connec_graph
 import math as mt
 import numpy as np
 import copy
+
 
 def Metripolis_Hastings(r, T, N, posi, weight, Xi, R, edges_keep_list_i, qij, theta_i):
 
@@ -22,7 +23,7 @@ def Metripolis_Hastings(r, T, N, posi, weight, Xi, R, edges_keep_list_i, qij, th
 
     #calculate the acceptance probability
     relative_pi = mt.exp(-(theta_j - theta_i) / T)
-    relative_transi = qji / qij
+    relative_transi = float(qji) / float(qij)
     relative = relative_pi * relative_transi
     accept_prob = min(relative, 1)
     U = np.random.uniform(0, 1)
