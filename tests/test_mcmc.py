@@ -18,6 +18,7 @@ import math as mt
 import networkx as nx
 import copy
 
+sys.path.append('../mcmc')
 from mcmc.posi_assign import posi_assign
 from mcmc.edge_oper import edge_oper
 from mcmc.theta import theta
@@ -26,6 +27,7 @@ from mcmc.mcmc import mcmc
 from mcmc.cli import cli
 from mcmc.Metripolis_Hastings import Metripolis_Hastings 
 from mcmc.plot_graph import plot_graph
+
 
 class TestMcmc(unittest.TestCase):
     
