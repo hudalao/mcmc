@@ -1,6 +1,6 @@
-from mcmc.theta import theta
-from mcmc.edge_oper import edge_oper
-from mcmc.graph import connec_graph
+from theta import theta
+from edge_oper import edge_oper
+from graph import connec_graph
 import math as mt
 import numpy as np
 import copy
