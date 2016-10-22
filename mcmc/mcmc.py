@@ -24,8 +24,8 @@ import math as mt
 import networkx as nx
 import copy
 import matplotlib.pyplot as plt
-from posi_assign import posi_assign
 from edge_oper import edge_oper
+from posi_assign import posi_assign
 from theta import theta
 from graph import connec_graph
 from Metripolis_Hastings import Metripolis_Hastings
