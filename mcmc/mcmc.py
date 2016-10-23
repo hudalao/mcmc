@@ -17,7 +17,8 @@ Dx = 5
 Dy = 5
 Lx = 1
 Ly = 1
-
+import sys
+sys.path.append('../mcmc')
 
 import numpy as np
 import math as mt

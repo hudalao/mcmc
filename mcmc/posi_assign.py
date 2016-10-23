@@ -7,6 +7,8 @@
 #Lx: the length of 2D grid along x direction
 #Ly: the length of 2D grid along y direction
 #Req1: N is equal or smaller than D^2
+import sys
+sys.path.append('../mcmc')
 
 import numpy as np
 

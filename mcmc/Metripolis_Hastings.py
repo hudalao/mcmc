@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../mcmc')
+
 from theta import theta
 from edge_oper import edge_oper
 from graph import connec_graph

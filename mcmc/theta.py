@@ -2,6 +2,8 @@
 #N: the number of vertexs
 #edges_list: should be sorted in advance
 #G: the graph
+import sys
+sys.path.append('../mcmc')
 
 import networkx as nx
 

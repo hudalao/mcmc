@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../mcmc')
+
 import matplotlib.pyplot as plt
 import networkx as nx
 
