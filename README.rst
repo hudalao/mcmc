@@ -12,11 +12,11 @@ MCMC
         :alt: Documentation Status
 
 .. image:: https://pyup.io/repos/github/hudalao/mcmc/shield.svg
-     :target: https://pyup.io/repos/github/hudalao/mcmc/
-     :alt: Updates
+        :target: https://pyup.io/repos/github/hudalao/mcmc/
+        :alt: Updates
 
-.. image:: https://coveralls.io/repos/github/hudalao/mcmc/badge.svg?branch=master
-     :target: https://coveralls.io/github/hudalao/mcmc
+.. image:: https://coveralls.io/repos/github/hudalao/mcmc/badge.svg
+        :target: https://coveralls.io/github/hudalao/mcmc
 
 
 Markov Chain Monte Carlo
