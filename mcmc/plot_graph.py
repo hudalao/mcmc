@@ -23,5 +23,5 @@ def plot_graph(G, N, time_point, posi):
  #   nx.draw_networkx_edges(G[time_point],pos,edgelist=esmall,width=3,alpha=0.5,edge_color='b',style='dashed')
 
     # labels
-    nx.draw_networkx_labels(G[time_point],pos,font_size=10,font_family='sans-serif')
+#    nx.draw_networkx_labels(G[time_point],pos,font_size=10,font_family='sans-serif')
 
