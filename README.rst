@@ -16,7 +16,7 @@ MCMC
      :alt: Updates
 
 .. image:: https://coveralls.io/repos/github/hudalao/mcmc/badge.svg?branch=master
-     :target: https://coveralls.io/github/hudalao/mcmc?branch=master
+     :target: https://coveralls.io/github/hudalao/
 
 
 Markov Chain Monte Carlo
