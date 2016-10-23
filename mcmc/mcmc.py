@@ -30,7 +30,7 @@ from mcmc.posi_assign import posi_assign
 from mcmc.theta import theta
 from mcmc.graph import connec_graph
 from mcmc.Metripolis_Hastings import Metripolis_Hastings
-from mcmc.plot_graph import plot_graph
+#from mcmc.plot_graph import plot_graph
 
 
 
