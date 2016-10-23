@@ -78,5 +78,5 @@ for ii in range(1, Time_points):
 num = 1
 for ii in range(num):
     plot_graph(G, N, ii, posi)
-plt.axis('on')
+#plt.axis('on') #for displaying using
 #plt.show() # display

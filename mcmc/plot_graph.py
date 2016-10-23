@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../mcmc')
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt #for plotting using
 import networkx as nx
 
 def plot_graph(G, N, time_point, posi):
@@ -10,7 +10,7 @@ def plot_graph(G, N, time_point, posi):
     pos = {}
     for ii in range(N):
         pos[ii] = posi[ii]
-    plt.figure(time_point + 1)
+ #   plt.figure(time_point + 1)
     elarge=[(u,v) for (u,v,d) in G[time_point].edges(data=True) if d['weight'] >0.5]
     esmall=[(u,v) for (u,v,d) in G[time_point].edges(data=True) if d['weight'] <=0.5]
 
