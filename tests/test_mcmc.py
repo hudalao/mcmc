@@ -12,7 +12,6 @@ Tests for `mcmc` module.
 import sys
 import unittest
 from contextlib import contextmanager
-from click.testing import CliRunner
 import numpy as np
 import math as mt
 import networkx as nx
