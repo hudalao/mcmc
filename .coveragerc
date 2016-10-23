@@ -1,5 +1,6 @@
 [run]
-source = mcmc
+#source = mcmc
 [report]
 include = mcmc/*
+omit = tests/*
 show_missing = True
