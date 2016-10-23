@@ -25,12 +25,12 @@ import math as mt
 import networkx as nx
 import copy
 import matplotlib.pyplot as plt
-from edge_oper import edge_oper
-from posi_assign import posi_assign
-from theta import theta
-from graph import connec_graph
-from Metripolis_Hastings import Metripolis_Hastings
-from plot_graph import plot_graph
+from mcmc.edge_oper import edge_oper
+from mcmc.posi_assign import posi_assign
+from mcmc.theta import theta
+from mcmc.graph import connec_graph
+from mcmc.Metripolis_Hastings import Metripolis_Hastings
+from mcmc.plot_graph import plot_graph
 
 
 
@@ -79,4 +79,4 @@ num = 1
 for ii in range(num):
     plot_graph(G, N, ii, posi)
 plt.axis('on')
-plt.show() # display
+#plt.show() # display
