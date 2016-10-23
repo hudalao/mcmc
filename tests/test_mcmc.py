@@ -31,12 +31,12 @@ from mcmc.plot_graph import plot_graph
 class TestMcmc(unittest.TestCase):
     
     def __init__(self):
-        posi = posi_assign.posi_assign(5, 5, 5, 1, 1)
+        posi = posi_assign(5, 5, 5, 1, 1)
         self.N = 5
         self.G = nx.Graph()
-        self.graph = graph.connec_graph(self.N, self.G)
+        self.graph = connec_graph(self.N, self.G)
         self.graph.init_graph()  #start with the graph with edges([(0,1),(0,2),(0,3),(0,4)])
-        self.edge_oper = edge_oper.edge_oper(self.N, posi, self.G)
+        self.edge_oper = edge_oper(self.N, posi, self.G)
         self.weight = self.edge_oper.weight_calc()
         self.r = 5
 
@@ -67,8 +67,8 @@ class TestMcmc(unittest.TestCase):
 
     def edge_delet(self):
         R = copy.deepcopy(self.G)
-        graph = graph.connec_graph(self.N, R)
-        edge_oper = edge_oper.edge_oper(self.N, posi, R)
+        graph = connec_graph(self.N, R)
+        edge_oper = edge_oper(self.N, posi, R)
         
         R.add_edge(1, 3)
         edges_keep_num, edges_keep_list = graph.edges_keep()
@@ -79,8 +79,8 @@ class TestMcmc(unittest.TestCase):
 
     def edge_add(self):
         S = copy.deepcopy(self.G)
-        graph = graph.connec_graph(self.N, S)
-        edge_oper = edge_oper.edge_oper(self.N, posi, S)
+        graph = connec_graph(self.N, S)
+        edge_oper = edge_oper(self.N, posi, S)
         
         edges_keep_num, edges_keep_list = graph.edges_keep()
         edge_gene = (1,3)
