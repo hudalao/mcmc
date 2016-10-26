@@ -2,8 +2,6 @@
 #N:the number of the vertex
 #posi: the positions of every vertex
 #G: the graph G = networkx.graph()
-import sys
-sys.path.append('../mcmc')
 
 import numpy as np
 import math as mt

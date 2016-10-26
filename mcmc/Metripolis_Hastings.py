@@ -1,9 +1,12 @@
 import sys
-sys.path.append('../mcmc')
+import os
+#make sure the program can be executable from test file
+dir_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '.'))
+sys.path.append(dir_root)
 
-from mcmc.theta import theta
-from mcmc.edge_oper import edge_oper
-from mcmc.graph import connec_graph
+from theta import theta
+from edge_oper import edge_oper
+from graph import connec_graph
 import math as mt
 import numpy as np
 import copy

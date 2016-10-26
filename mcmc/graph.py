@@ -1,8 +1,6 @@
 #this class including all the function needed for the graph
 #N: the number of the vertexs
 #G: the graph
-import sys
-sys.path.append('../mcmc')
 
 import networkx as nx
 import numpy as np
