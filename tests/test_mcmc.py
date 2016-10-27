@@ -34,6 +34,7 @@ class TestMcmc(unittest.TestCase):
         self.edge_oper_1 = edge_oper(self.N, self.posi, self.G)
         self.weight = self.edge_oper_1.weight_calc()
         self.r = 5
+        self.T = 10
         pass
 
     def tearDown(self):
@@ -91,6 +92,5 @@ class TestMcmc(unittest.TestCase):
         theta_expect = round(theta_expect, 7)
         theta_calc = round(theta_calc, 7)
         self.assertEqual(theta_expect, theta_calc)
-
 
 

@@ -32,7 +32,7 @@ from plot_graph import plot_graph
 # Lx: the length of 2D grid along x direction
 # Ly: the length of 2D grid along y direction
 # Req1: N is equal or smaller than D^2
-Time_points = 1000
+Time_points = 20000
 T = 10
 r = 5
 N = 5
@@ -70,10 +70,6 @@ R = copy.deepcopy(Xi)
 #calculate the transition probability from X(i) to potential X(j), here, from X(0) to potential X(1)
 qij = 1 / (N * (N - 1) / 2 - edges_keep_num_o)
 
-#applying Metripolis-Hastings Algorithm
-
-edges_keep_list_i = edges_keep_list_o
-theta_i = theta_o
 
 #create a dic storing the string of edges list of the graph as the key and the appearance time in the time sequence  as the corresponding value
 num_appearance_dic = {}
@@ -100,7 +96,13 @@ length_sort = sorted(length.items(), key=operator.itemgetter(1), reverse = True)
 shortest_path_max_arry[0] = length_sort[0][1]
 
 
+#applying Metripolis-Hastings Algorithm
+
+edges_keep_list_i = edges_keep_list_o
+theta_i = theta_o
+
 for ii in range(1, Time_points):
+
     G[ii], accept_j, edges_keep_update_j, edge_gene_j, edges_keep_list_j, qji, theta_j = Metripolis_Hastings(r, T, N, posi, weight, Xi, R, edges_keep_list_i, qij, theta_i)
     # reassign the parameters for the next run
     Xi = copy.deepcopy(G[ii])
@@ -117,7 +119,6 @@ for ii in range(1, Time_points):
         num_appearance_dic[G_str] = num_appearance_dic[G_str] + 1
     else:
         num_appearance_dic[G_str] = 1
-    print(G[ii].edges()) 
     #the numer of edges connected to vertex 0
     num_edges_tozero_arry[ii] = G[ii].degree(0)
 
@@ -166,7 +167,7 @@ E3 = np.sum(num_edges_arry)/Time_points
 #Problem4 : the expected maximum distance of the shortest path in a graph that connects vertex 0 to another vertex
 E4 = np.sum(shortest_path_max_arry)/Time_points
 
-#print(A1,'\n',E2,'\n',E3,'\n',E4)
+print('problem1:',A1,'\n','problem2:',E2,'\n','problem3:',E3,'\n','problem4:', E4)
 
 #plt.axis('on') #for displaying using
 #plt.show() # display
